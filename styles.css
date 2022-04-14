@@ -3,87 +3,104 @@
     margin: 0;
     outline: 0;
     box-sizing: border-box;
-   }
+    }
 
-   body {
-       background: #333;
-       color: #fff;
-       font-family: "Source Sans Pro";
-   }
+    body {
+        background: #333;
+        color: #fff;
+        font-family: "Source Sans Pro";
+    }
 
-   html, body, #container{
-       height: 100%;
-   }
+    html, body, #container{
+        height: 100%;
+    }
 
-   #container img{
-       height: 400px;
-   }
+    #container img{
+        height: 400px;
+    }
 
-   #container{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       padding: 0 30px;
-   }
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+    }
 
-   #container img {
-       width: 350px;
-       height: 350px;
-       border-radius: 50%;
-       border: 5px solid #3bb3f3;
-   }
-   
-   #container h1 {
-       font-size: 42px;
-       font-weight: 600;
-       margin-top: 30px;
-   }
+    #container img {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 5px solid #3bb3f3;
+    }
 
-   #container h2 {
-       font-size: 22px;
-       font-weight: 600;
-       margin-top: 5px;
-       opacity: 0.6;
-   }
+    #container h1 {
+        font-size: 42px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
 
-   #container p {
-       font-size: 20px;
-       max-width: 500px;
-       text-align: center;
-       opacity: 0.8;
-       line-height: 1.6;
-       margin-top: 30px;
-   }
+    #container h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 5px;
+        opacity: 0.6;
+    }
 
-   #container .links {
-       margin-top: 15px;
+    #container p {
+        font-size: 20px;
+        max-width: 500px;
+        text-align: center;
+        opacity: 0.8;
+        line-height: 1.6;
+        margin-top: 10px;
+    }
 
-   }
+    #container .links {
+        margin-top: 15px;
+        border: solid 5px;
+        border-radius: 5px;
+        border-color: #3bb3f3;
+    }
 
-   #container .links a {
-       color: #fff;
-       font-size: 18px;
-       text-decoration: none;
-       border-bottom: 2px solid #fff;
-       padding-bottom: 3px;
-       margin-left: 15px;
+    #container .links a {
+        color: #3bb3f3;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 30px;
+        margin-right: 30px;
 
-   }
-   #container .links a:hover{
-       transition: 0.2s;
-       color: #3bb3f3;
-       border-color: #3bb3f3;
-   }
+    }
+    #container .links a:hover{
+        transition: 0.2s;
+        color: #fff;
+        border-color: #3bb3f3;
+    }
 
-   .waves{
-       width: 100%;
-       height: 70%;
-       position: absolute;
-       bottom: 0;
-       left: 0;
-       right: 0;
-   }
+    svg {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .texto{
+        display: column;
+        border: solid 5px;
+        border-radius: 5px;
+        border-color: #3bb3f3;
+    }
+
+
+
+    .waves{
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
         .waves-1{
             animation: moveWave1 3s ease-in-out infinite alternate;
         }
@@ -107,7 +124,7 @@
         }
             @keyframes moveWave3 {
                 from{
-                    transform: translateX(1600px);
+                    transform: translateX(-1600px);
                 }
                 
             }    
